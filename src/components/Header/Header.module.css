@@ -5,6 +5,8 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .budget {
