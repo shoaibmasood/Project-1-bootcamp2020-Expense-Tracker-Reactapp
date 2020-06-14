@@ -1,0 +1,27 @@
+.budget__income {
+  margin-bottom: 10px;
+  background-color: #28b9b5;
+  padding: 12px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.budget__income__text {
+  font-size: 1.5em;
+  color: #444;
+  margin-top: 1px;
+}
+
+.budget__income__value {
+  letter-spacing: 1px;
+  font-size: 1.5em;
+}
+
+.budget__income__percentage {
+  /* float: left; */
+  width: 34px;
+  font-size: 11px;
+  padding: 3px 0;
+  margin-left: 10px;
+}
