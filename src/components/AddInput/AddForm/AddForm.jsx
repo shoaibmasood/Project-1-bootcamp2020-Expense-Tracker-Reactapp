@@ -15,11 +15,10 @@ const AddForm = () => {
       <form onSubmit={onSubmit}>
         <select
           className={styles.add__type}
+          defaultValue={sign}
           onChange={(e) => setSign(e.target.value)}
         >
-          <option value="+" selected>
-            +
-          </option>
+          <option value="+">+</option>
           <option value="-">-</option>
         </select>
         <input

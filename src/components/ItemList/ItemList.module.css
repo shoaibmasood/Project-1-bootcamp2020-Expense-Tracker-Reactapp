@@ -1,0 +1,11 @@
+.income__container {
+  display: flex;
+  width: 40vw;
+  flex-direction: column;
+}
+
+.expense__container {
+  display: flex;
+  width: 40vw;
+  flex-direction: column;
+}

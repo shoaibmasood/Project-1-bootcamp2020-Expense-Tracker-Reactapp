@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 13px;
+  border-bottom: 1px solid #e7e7e7;
+  border: 2px solid green;
+  color: #ff5049;
+  /* margin-left: 4em; */
+}
