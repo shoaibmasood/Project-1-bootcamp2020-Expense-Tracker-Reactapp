@@ -1,18 +1,14 @@
-import React from 'react';
-import styles from './ExpenseList.module.css';
+import React from 'react'
+import styles from './ExpenseList.module.css'
 const ExpenseList = ({ transaction: { text, amount } }) => {
-  if (amount < 0) {
-    return (
-      <>
-        <ul className={styles.container}>
-          <li>{text}</li>
-          <li>{amount}</li>
-        </ul>
-      </>
-    );
-  } else {
-    return null;
-  }
-};
+  return (
+    <>
+      {amount > 0 && <ul className={styles.container}>
+        <li>{text}</li>
+        <li>{amount}</li>
+      </ul>}
+    </>
+  )
+}
 
-export default ExpenseList;
+export default ExpenseList
