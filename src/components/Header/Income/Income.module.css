@@ -17,11 +17,3 @@
   letter-spacing: 1px;
   font-size: 1.5em;
 }
-
-.budget__income__percentage {
-  /* float: left; */
-  width: 34px;
-  font-size: 11px;
-  padding: 3px 0;
-  margin-left: 10px;
-}

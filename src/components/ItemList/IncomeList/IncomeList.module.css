@@ -7,3 +7,26 @@
   color: #28b9b5;
   margin-left: 1em;
 }
+
+.item__delete__btn {
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  color: #28b9b5;
+  line-height: 1;
+  /* display: none; */
+}
+
+.item__delete__btn:focus {
+  outline: none;
+}
+.item__delete__btn:active {
+  transform: translateY(2px);
+}
+
+li:hover .item__delete--btn {
+  display: block;
+}
