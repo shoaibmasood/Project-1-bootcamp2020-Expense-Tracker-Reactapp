@@ -1,26 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import styles from './AddForm.module.css';
+import { GlobalContext } from '../../../context/GlobalState';
 
 const AddForm = () => {
   const [text, setText] = useState('');
   const [amount, setAmount] = useState('');
-  const [sign, setSign] = useState('+');
+
+  const { addTransaction } = useContext(GlobalContext);
 
   const onSubmit = (e) => {
     e.preventDefault();
+
+    const newTransaction = {
+      id: Math.floor(Math.random() * 100000000),
+      text,
+      amount: +amount,
+    };
+
+    addTransaction(newTransaction);
   };
 
   return (
     <>
       <form onSubmit={onSubmit}>
-        <select
-          className={styles.add__type}
-          defaultValue={sign}
-          onChange={(e) => setSign(e.target.value)}
-        >
-          <option value="+">+</option>
-          <option value="-">-</option>
-        </select>
         <input
           className={styles.add__description}
           type="text"

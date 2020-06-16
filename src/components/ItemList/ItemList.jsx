@@ -8,17 +8,17 @@ const ItemList = () => {
   const { transactions } = useContext(GlobalContext);
 
   return (
-    <div>
+    <div style={{ display: 'flex' }}>
       {transactions.map((transaction) => (
         <div className={styles.income__container}>
           <IncomeList key={transaction.id} transaction={transaction} />
         </div>
       ))}
-      {/* {transactions.map((transaction) => (
+      {transactions.map((transaction) => (
         <div className={styles.expense__container}>
           <ExpenseList key={transaction.id} transaction={transaction} />
         </div>
-      ))} */}
+      ))}
     </div>
   );
 };
