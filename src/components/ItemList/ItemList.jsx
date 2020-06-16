@@ -1,26 +1,25 @@
-import React, { useContext } from 'react';
-import styles from './ItemList.module.css';
-import IncomeList from './IncomeList/IncomeList';
-import ExpenseList from './ExpenseList/ExpenseList';
-import { GlobalContext } from '../../context/GlobalState';
+import React, { useContext } from 'react'
+import { GlobalContext } from '../../context/GlobalState'
+import ExpenseList from './ExpenseList/ExpenseList'
+import IncomeList from './IncomeList/IncomeList'
 
 const ItemList = () => {
-  const { transactions } = useContext(GlobalContext);
+  const { transactions } = useContext(GlobalContext)
 
   return (
-    <div style={{ display: 'flex' }}>
-      {transactions.map((transaction) => (
-        <div className={styles.income__container}>
+    <div className='flexer' style={{ justifyContent: 'space-around' }}>
+      <div style={{ flex: 1 }}>
+        {transactions.map((transaction) => (
           <IncomeList key={transaction.id} transaction={transaction} />
-        </div>
-      ))}
-      {transactions.map((transaction) => (
-        <div className={styles.expense__container}>
+        ))}
+      </div>
+      <div style={{ flex: 1 }}>
+        {transactions.map((transaction) => (
           <ExpenseList key={transaction.id} transaction={transaction} />
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default ItemList;
+export default ItemList
