@@ -15,4 +15,4 @@ npm start
 # Build for prod
 npm run build
 ````
-## 3 Live Demo http://shoaibmasood-expense-tracker.surge.sh/
+## Live Demo http://shoaibmasood-expense-tracker.surge.sh/
