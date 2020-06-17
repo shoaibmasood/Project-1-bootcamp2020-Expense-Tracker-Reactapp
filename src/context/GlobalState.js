@@ -4,12 +4,7 @@ import AppReducer from './AppReducer';
 // Initial State
 
 const initialState = {
-  transactions: [
-    { id: 1, text: 'Flower', amount: -20 },
-    { id: 2, text: 'Salary', amount: 300 },
-    { id: 3, text: 'basket', amount: -10 },
-    { id: 4, text: 'basket1', amount: 10 },
-  ],
+  transactions: [],
 };
 
 //Create Context
@@ -47,6 +42,7 @@ export const GlobalProvider = ({ children }) => {
       value={{
         transactions: state.transactions,
         deleteIncome,
+        deleteExpense,
         addTransaction,
       }}
     >

@@ -3,9 +3,27 @@
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  width: 100%;
+  width: 90%;
   padding: 13px;
   border-bottom: 1px solid #e7e7e7;
   color: #ff5049;
-  /* margin-left: 4em; */
+  margin-right: 1em;
+}
+
+.item__delete__btn {
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  color: #ff5049;
+  line-height: 1;
+}
+
+.item__delete__btn:focus {
+  outline: none;
+}
+.item__delete__btn:active {
+  transform: translateY(2px);
 }
