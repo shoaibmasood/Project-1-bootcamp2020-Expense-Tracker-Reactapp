@@ -11,7 +11,7 @@ const ExpenseList = ({ transaction: { text, amount, id } }) => {
         <ul className={styles.container}>
           <li>{text}</li>
           <div className="flexer">
-            <li>{amount}&nbsp;&nbsp;</li>
+            <li>$ {amount}&nbsp;&nbsp;</li>
             <li>
               <button
                 onClick={() => deleteExpense(id)}
