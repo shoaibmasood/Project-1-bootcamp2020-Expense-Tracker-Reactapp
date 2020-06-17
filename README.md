@@ -1,5 +1,5 @@
 # Expense Tracker -reactApp
-This project is buid by using React Context api and React hooks( useState, useContext, useReducer) with pure css and deployed
+This project is build by using React Context api and React hooks( useState, useContext, useReducer) with pure css and deployed
 using surge with github actions.
 
 ## Project View
